@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Exercicio03 {
 	/*
-	 * Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
+	 * Faça um Programa que verifique se uma letra digitada é "F" ou "M". Conforme a
+	 * letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
 	 */
 	public static void main(String[] args) {
 
@@ -12,12 +13,12 @@ public class Exercicio03 {
 
 		System.out.println("Digite uma letra");
 		String letra = scan.next();
-
-		if (letra.equalsIgnoreCase("m")) {
+		
+		if(letra.equalsIgnoreCase("m")) {
 			System.out.println("O sexo digitado é o: Masculino");
-		} else if (letra.equalsIgnoreCase("f")) {
+		}else if(letra.equalsIgnoreCase("f")){
 			System.out.println("O sexo digitado é o: Feminino");
-		} else {
+		}else {
 			System.out.println("O sexo digitado é inválido");
 		}
 
