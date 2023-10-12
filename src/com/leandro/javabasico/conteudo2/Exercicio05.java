@@ -16,30 +16,25 @@ public class Exercicio05 {
 
 		Scanner scan = new Scanner(System.in);
 
-		System.out.println("Digite uma letra");
-		String letra = scan.next();
-
+		System.out.println("Digite a primeira nota:");
+		double nota1 = scan.nextDouble();
 		
-		if (letra.length() > 1) {
-			System.out.println("O caracter digitado NÃO É VÁLIDO");
-		} else  {
-			switch (letra) {
-			case "a":
-			case "e":
-			case "i":
-			case "o":
-			case "u":
-			case "A":
-			case "E":
-			case "I":
-			case "O":
-			case "U": System.out.println("A letra digitada é VOGAL"); break;
-			
-			default: System.out.println("A letra digitada é CONSOANTE");
-				
-			}
+		System.out.println("Digite a segunda nota:");
+		double nota2 = scan.nextDouble();
 
-		} 
+		double media = (nota1 + nota2) / 2;
+		
+		System.out.println("A media do aluno foi: " + media);
+		
+		System.out.println("++++++++ +++++++++++++");
+		
+		if(media == 10) {
+			System.out.println("Aluno aprovado com distinção!");
+			System.out.println("Parabéns!");
+		}else if(media >= 7){
+			System.out.println("Aluno aprovado!");
+		}else System.out.println("Aluno reprovado.");
+		
 
 	}
 
